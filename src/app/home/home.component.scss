@@ -1,0 +1,17 @@
+main{
+  width: 90%;
+  margin: auto;
+  padding: 20px 15px;
+
+  .banners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+      img{
+        height: 1000px;
+        width: 2000px;
+      }
+    }
+  }
+
