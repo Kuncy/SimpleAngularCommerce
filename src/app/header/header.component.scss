@@ -1,3 +1,6 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 header {
   display: flex;
   background-color: white;
@@ -5,26 +8,14 @@ header {
   padding: 5px 5%;
   color: whitesmoke;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  background-position: center;
+  background-repeat: no-repeat center;
+  max-width: 1300px;
 
   .brand {
     flex: 1;
     display: flex;
     align-items: center;
-
-    h5 {
-      font-family: 'Lobster', cursive;
-      font-size: 23px;
-      margin: 0;
-      letter-spacing: 1px;
-      color: rgb(52, 186, 219);
-      background: linear-gradient(
-        90deg,
-        rgba(52, 186, 219, 0.9878326330532213) 44%,
-        rgba(0, 255, 190, 1) 100%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
   }
 }
 .Hamburger {
@@ -35,7 +26,6 @@ header {
   align-items: center;
   position: relative;
   right: 1070px;
-
 }
 .Bag {
   width: 20px;
@@ -50,6 +40,50 @@ header {
 .search {
   width: 20px;
   height: 20px;
-  
 }
+
+body {
+  font-size: 144px;
+  font-weight: bold;
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  background-color: black;
+  height: 30px;
+  overflow-x: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.masthead {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: url("/assets/images/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat center;
+  max-width: 1300px;
+  }
+  .masthead {
+    height: 96vh;
+    padding: 0;
+  }
+
 

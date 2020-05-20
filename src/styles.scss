@@ -9,7 +9,7 @@
     height: 40px;
   }
   
-  #mainNav .navbar-toggler {
+  /*#mainNav .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
     color: #64a19d;
@@ -43,7 +43,6 @@
       padding-bottom: 0;
       border-bottom: none;
       background-color: white;
-      transition: background-color 0.3s ease-in-out;
       border-color: black;
     }
     #mainNav .navbar-brand {
@@ -83,21 +82,25 @@
       outline: none;
       border-bottom: 0.25rem solid #64a19d;
     }
-  }
+  } */
+
   
-  .masthead {
+ /*  .masthead {
     position: relative;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
     width: 100%;
     height: auto;
     min-height: 35rem;
     padding: 15rem 0;
     background: url("./assets/images/bg-masthead.jpg");
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat center;
+  }  */
 
-  } 
   
-  .masthead h1 {
+/*   .masthead h1 {
     font-family: 'Varela Round';
     font-size: 2.5rem;
     line-height: 2.5rem;
@@ -133,7 +136,7 @@
       max-width: 30rem;
       font-size: 1.25rem;
     }
-  }
+  } */
 
   body {
     font-family: 'Nunito';

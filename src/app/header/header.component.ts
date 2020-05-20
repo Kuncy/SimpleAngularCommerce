@@ -9,7 +9,7 @@ import { Product } from '../product/product.component';
 })
 export class HeaderComponent implements OnInit {
   constructor(private store: Store<{ items: []; cart: [] }>) {
-    store.pipe(select('shop')).subscribe(data => (this.cart = data.cart));
+    store.pipe(select('shop')).subscribe(data => (this.cart = data.cart))
   }
 
   cart: Product[] = [];
