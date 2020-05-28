@@ -3,11 +3,12 @@
     <div class="container">
         <ul class="navbar-nav ml-auto">
           <li class ="nav-item">
-            <a [routerLink] = "['/home']"></a>
             <img class= Hamburger src="/assets/images/Hamburger_icon.svg" />
           </li>
           <li class ="nav-item">
+            <a [routerLink] = "['']">
             <img class= "search" src="/assets/images/search.png" />
+          </a>
           </li>
           <li class ="nav-item">
             <a [routerLink] = "['/cart']">
@@ -28,7 +29,28 @@
   
   <div class="split right">
     <div class="centered">
-      <h2>ADRESSE ETC.</h2>
-      <p>Some text.</p>
-    </div>
-  </div>
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+      
+              <div class="row">
+                <div class="col-50">
+                  <label class="text" for="fname"><i class="fa"></i> First Name</label>
+                  <input type="text" id="fname" name="firstname" >
+                  <label class="text" for="fname"><i class="fa"></i> Last Name</label>
+                  <input type="text" id="fname" name="firstname" >
+                  <label class="text" for="email"><i class="fa"></i> Email</label>
+                  <input type="text" id="email" name="email" >
+                  <label class="text" for="adr"><i class="fa"></i> Address</label> 
+                  <input type="text" id="adr" name="address" placeholder="">
+                  <label class="text" for="adr"><i class="fa"></i> Zip </label> 
+                  <input type="text" id="zip" name="zip" placeholder="10001">
+                  
+                  <label class="text" for="city"><i class="fa"></i> City</label>
+                  <input type="text" id="city" name="city" >
+                  <label class="text" for="city"><i class="fa"></i> Country</label>
+                  <input type="text" id="city" name="city" >
+      
+                  </div>
+                </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { select, Store } from '@ngrx/store';
+import { Product } from '../product/product.component';
 
 @Component({
   selector: 'app-cart',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private store: Store<{ items: []; cart: [] }>) {
+    store.pipe(select('shop')).subscribe(data => (this.cart = data.cart))
   }
 
+  cart: Product[] = [];
+
+  ngOnInit() {}
 }
+
