@@ -1,0 +1,94 @@
+header {
+    display: flex;
+    background-color: white;
+    margin: 0;
+    padding: 5px 5%;
+    color: whitesmoke;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background-position: center;
+    background-repeat: no-repeat center;
+    max-width: 1300px;
+  
+    .brand {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .Hamburger {
+    width: 20px;
+    height: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 2vw;
+    top: 0.5vw;
+  }
+  .Bag {
+    width: 20px;
+    height: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 2vw;
+    top: 0.5vw;
+  }
+  .search {
+    width: 20px;
+    height: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 6vw;
+    top: 0.5vw;
+  }
+
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

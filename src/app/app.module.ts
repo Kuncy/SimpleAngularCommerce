@@ -18,6 +18,8 @@ import { ShopEffects } from './store/effects';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
 import { CartComponent } from './cart/cart.component';
+import { ShopComponent } from './shop/shop.component';
+import { MatGridListModule } from '@angular/material';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { CartComponent } from './cart/cart.component';
     HeaderComponent,
     ProductListComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
+    ShopComponent
 
   ],
   imports: [
@@ -42,7 +45,8 @@ import { CartComponent } from './cart/cart.component';
     MatButtonModule,
     MatIconModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
