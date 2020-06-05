@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar fixed-top" id="mainNav">
+<!-- <nav class="navbar navbar-expand-lg navbar fixed-top" id="mainNav">
   <div class="container">
       <ul class="navbar-nav ml-auto">
         <li class ="nav-item">
@@ -12,13 +12,14 @@
         <li class ="nav-item">
           <a [routerLink] = "['/cart']">
           <img class= Bag src="/assets/images/business.png" />
+          <span class="badge" *ngIf="cart.length > 0">{{ cart.length }}</span>
         </a>
         </li>
       </ul>
   </div>
-</nav>
+</nav> -->
 
-<div class="responsive">
+<!-- <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="img_5terre.jpg">
       <img src="/assets/images/Shirt.jpg" alt="Cinque Terre" width="600" height="400">
@@ -54,5 +55,8 @@
     <div class="desc">Shirt 300</div>
   </div>
 </div>
+<div class="clearfix"></div> --> 
 
-<div class="clearfix"></div>
+<section class="product-area">
+  <app-product-list [fruits]="items"></app-product-list>
+</section>

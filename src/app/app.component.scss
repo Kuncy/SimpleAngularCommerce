@@ -1,0 +1,61 @@
+header {
+    display: flex;
+    background-color: white;
+    margin: 0;
+    padding: 5px 5%;
+    color: whitesmoke;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background-position: center;
+    background-repeat: no-repeat center;
+    max-height:  94vh;
+  
+    .brand {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      
+    }
+  } 
+  .navbar{
+    margin: 0;
+    position: sticky;
+    top: 2.05%;
+    left: 50%;
+    right: 50%;
+    margin-right: -100%;
+    transform: translate(-50%, -50%);
+    max-width: 87vw;
+  }
+  
+  .Hamburger {
+    width: 20px;
+    height: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 2vw;
+    top: 0.5vw;
+  }
+  .Bag {
+    width: 20px;
+    height: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 2vw;
+    top: 0.5vw;
+  }
+  .search {
+    width: 20px;
+    height: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 6vw;
+    top: 0.5vw;
+  }
+  
