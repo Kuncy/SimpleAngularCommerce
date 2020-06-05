@@ -17,6 +17,7 @@ export interface Product {
 export class ProductComponent implements OnInit {
   constructor(private store: Store<{ items: []; cart: [] }>) {}
 
+  
   inCart = false;
   @Input() product: Product;
 
