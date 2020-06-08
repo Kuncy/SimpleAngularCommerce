@@ -20,6 +20,7 @@ import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatBu
 import { CartComponent } from './cart/cart.component';
 import { ShopComponent } from './shop/shop.component';
 import { MatGridListModule } from '@angular/material';
+import { DetailsComponent } from './details/details.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { MatGridListModule } from '@angular/material';
     ProductListComponent,
     ProductComponent,
     CartComponent,
-    ShopComponent
+    ShopComponent,
+    DetailsComponent
 
   ],
   imports: [
