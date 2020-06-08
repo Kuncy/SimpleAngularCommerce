@@ -21,6 +21,8 @@ import { CartComponent } from './cart/cart.component';
 import { ShopComponent } from './shop/shop.component';
 import { MatGridListModule } from '@angular/material';
 import { DetailsComponent } from './details/details.component';
+import { DetailsListComponent } from './details-list/details-list.component';
+import { ShopyComponent } from './shopy/shopy.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { DetailsComponent } from './details/details.component';
     ProductComponent,
     CartComponent,
     ShopComponent,
-    DetailsComponent
+    DetailsComponent,
+    DetailsListComponent,
+    ShopyComponent
 
   ],
   imports: [
