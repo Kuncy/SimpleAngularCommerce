@@ -13,7 +13,7 @@ import { CartComponent } from '../cart/cart.component';
         { path: 'cart', component: CartComponent, },
         { path: '', component: HeaderComponent },
         { path: 'shop', component: ShopComponent},
-        { path: 'shopy', component: ShopyComponent },
+        { path: 'shopy/:id', component: ShopyComponent },
     ];
 
     NgModule({

@@ -3,6 +3,7 @@ import { Store } from '@ngrx/store';
 import { AddToCart, RemoveFromCart } from '../store/actions';
 
 export interface Product {
+  id: string;
   name: string;
   price: number;
   description: string;
@@ -19,8 +20,8 @@ export class DetailsComponent implements OnInit {
 
   constructor(private store: Store<{ items: []; cart: [] }>) {}
 
-  
   inCart = false;
+  
   @Input() product: Product;
 
   addToCart(item: Product) {

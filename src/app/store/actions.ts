@@ -1,6 +1,7 @@
 import { Action } from '@ngrx/store';
 
 interface Product {
+  id: string;
   name: string;
   price: number;
   description: string;

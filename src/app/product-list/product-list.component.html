@@ -1,3 +1,4 @@
 <div class="product-list">
-  <app-product *ngFor="let fruit of fruits" [product]="fruit"></app-product>
+  <app-product *ngFor="let fruit of fruits" [product]="fruit" (click)="clickFruit(fruit)"></app-product>
 </div>
+<!-- [routerLink] = "['/shopy', fruit.id]" -->

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { GetItems } from '../store/actions';
 import { Product } from '../product/product.component';
+import { ActivatedRoute } from '@angular/router';
+import { FruitsService } from '../fruits.service';
 
 @Component({
   selector: 'app-shopy',
@@ -10,7 +12,7 @@ import { Product } from '../product/product.component';
 })
 export class ShopyComponent implements OnInit {
 
-  constructor(private store: Store<{ 
+  constructor(private route: ActivatedRoute, private fruitService: FruitsService, private store: Store<{ 
     items: Product[]; cart: [] }>) {
     store.pipe(select('shop')).subscribe(data => (this.items = data.items));
     store.pipe(select('shop')).subscribe(data => (this.cart = data.cart));
@@ -18,7 +20,21 @@ export class ShopyComponent implements OnInit {
 
   items: Product[] = [];
   cart: Product[] = [];
-  ngOnInit() {
-    this.store.dispatch(new GetItems());
+  private productID: string = '';
+  product: Product;
+  async ngOnInit() {
+    this.productID = this.route.snapshot.paramMap.get('id');
+    await this.fruitService.getAll().subscribe((data: any[]) => {
+      const actualData: any = data.find((element: any) => element.id === this.productID);
+      this.product = {
+        id: actualData.id,
+        name: actualData.name,
+        price: actualData.price,
+        description: actualData.description,
+        image: actualData.image,
+        perfect: actualData.perfect
+      };
+      
+    });
   }
 }
