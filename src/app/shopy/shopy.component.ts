@@ -22,10 +22,14 @@ export class ShopyComponent implements OnInit {
   cart: Product[] = [];
   private productID: string = '';
   product: Product;
-  async ngOnInit() {
-    this.productID = this.route.snapshot.paramMap.get('id');
-    await this.fruitService.getAll().subscribe((data: any[]) => {
-      const actualData: any = data.find((element: any) => element.id === this.productID);
+  
+  async ngOnInit(): Promise<any> {
+  this.productID =  this.route.snapshot.paramMap.get('id');
+  await this.fruitService.getAll().toPromise();
+  this.fruitService.getAll().subscribe((data: any[]) =>
+    {
+      
+      const actualData: any =  data.find((element: any) => element.id === this.productID);
       this.product = {
         id: actualData.id,
         name: actualData.name,

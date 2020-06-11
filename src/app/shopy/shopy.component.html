@@ -1,12 +1,21 @@
-<div class="product">
+<!-- <div class="product">
   <div class="product-image-holder">
-   <img [src]="product.image" [alt]="product.name" class="product-image" /> 
+    <div class="container1">
   </div>
-  <div class="product-details">
-    <p class="product-details__name">{{ product.name }}</p>
-    <p class="product-details__price">${{ product.price }}</p>
+   <img [src]="product.perfect"class="product-perfect" />  
   </div>
-  <div class="product-description">
-    <p>{{ product.discription }}</p>
   </div>
-</div>
+ -->
+  <div class="float-container">
+
+    <div class="float-child">
+      <img [src]="product.image" [alt]="product.name" class="product-image" />
+    </div>
+    
+    <div class="float-child">
+      <p class="product-details__name">{{ product.name }}</p>
+      <p class="product-details__price">${{ product.price }}</p>
+      <p class="prdouct-details__description">{{ product.description }}</p>
+    </div>
+    
+  </div>

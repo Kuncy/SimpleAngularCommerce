@@ -6,6 +6,7 @@ interface Product {
   price: number;
   description: string;
   image: string;
+  perfect: string;
 }
 
 export enum ActionTypes {
