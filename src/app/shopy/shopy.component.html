@@ -16,6 +16,15 @@
       <p class="product-details__name">{{ product.name }}</p>
       <p class="product-details__price">${{ product.price }}</p>
       <p class="prdouct-details__description">{{ product.description }}</p>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">{{ product.sizeS }}</button>
+        <button type="button" class="btn btn-primary">{{ product.sizeM }}</button>
+        <button type="button" class="btn btn-primary">{{ product.sizeL }}</button>
+        <button type="button" class="btn btn-primary">{{ product.sizeXL }}</button>
     </div>
-    
+    <div class="buy-btn">
+      <button class="w3-button w3-border w3-hover-dark-grey" (click)="addToCart(product)"
+      >Dark Grey</button>
+    </div>
+    </div>
   </div>

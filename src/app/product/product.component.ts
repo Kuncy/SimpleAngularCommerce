@@ -9,6 +9,10 @@ export interface Product {
   description: string;
   image: string;
   perfect: string;
+  sizeS: string;
+  sizeM: string;
+  sizeL: string;
+  sizeXL: string;
 }
 
 @Component({

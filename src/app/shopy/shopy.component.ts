@@ -4,6 +4,7 @@ import { GetItems } from '../store/actions';
 import { Product } from '../product/product.component';
 import { ActivatedRoute } from '@angular/router';
 import { FruitsService } from '../fruits.service';
+import { AddToCart, RemoveFromCart } from '../store/actions';
 
 @Component({
   selector: 'app-shopy',
@@ -16,12 +17,16 @@ export class ShopyComponent implements OnInit {
     items: Product[]; cart: [] }>) {
     store.pipe(select('shop')).subscribe(data => (this.items = data.items));
     store.pipe(select('shop')).subscribe(data => (this.cart = data.cart));
+    
   }
-
+  
   items: Product[] = [];
   cart: Product[] = [];
   private productID: string = '';
   product: Product;
+  inCart: true;
+  
+
   
   async ngOnInit(): Promise<any> {
   this.productID =  this.route.snapshot.paramMap.get('id');
@@ -36,9 +41,12 @@ export class ShopyComponent implements OnInit {
         price: actualData.price,
         description: actualData.description,
         image: actualData.image,
-        perfect: actualData.perfect
+        perfect: actualData.perfect,
+        sizeS: actualData.sizeS,
+        sizeM: actualData.sizeM,
+        sizeL: actualData.sizeL,
+        sizeXL: actualData.sizeXL,
       };
-      
     });
   }
 }

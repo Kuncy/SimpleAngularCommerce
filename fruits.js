@@ -5,7 +5,11 @@ module.exports = [
     "price": 23.54,
     "image": "/assets/images/Shirt.jpg",
     "perfect": "/assets/images/fruits.jpeg",
-    "description": "The bestest fruit known to man. Sweet yet sour but beautiful"
+    "description": "The bestest fruit known to man. Sweet yet sour but beautiful",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "sizeXL": "XL"
   },
   {
     "id": "0002",
@@ -13,7 +17,11 @@ module.exports = [
     "price": 10.33,
     "image": "/assets/images/oranges.jpeg",
     "perfect": "/assests/images/Bshirt.jpg",
-    "description": "Succulent and watery, you'll never run out of water"
+    "description": "Succulent and watery, you'll never run out of water",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "sizeXL": "XL"
   },
   {
     "id": "0003",
@@ -21,7 +29,11 @@ module.exports = [
     "price": 12.13,
     "image": "/assets/images/lemons.jpeg",
     "perfect": "/assests/images/Bshirt.jpg",
-    "description": "Sour but important for revitalization"
+    "description": "Sour but important for revitalization",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "sizeXL": "XL"
   },
   {
     "id": "0004",
@@ -29,7 +41,11 @@ module.exports = [
     "price": 10.33,
     "image": "/assets/images/banana.jpeg",
     "perfect": "/assests/images/Bshirt.jpg",
-    "description": "An every day fruit, can be served with every dish"
+    "description": "An every day fruit, can be served with every dish",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "sizeXL": "XL"
   },
   {
     "id": "0004",
@@ -37,7 +53,11 @@ module.exports = [
     "price": 10.33,
     "image": "/assets/images/apple-item.png",
     "perfect": "/assests/images/Bshirt.jpg",
-    "description": "Sliced and served with your salad. Served as snacks midway through the day"
+    "description": "Sliced and served with your salad. Served as snacks midway through the day",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "sizeXL": "XL"
   },
   {
     "id": "0005",
@@ -45,6 +65,10 @@ module.exports = [
     "price": 10.33,
     "image": "/assets/images/unknown.jpeg",
     "perfect": "/assests/images/Bshirt.jpg",
-    "description": "A great fruit, also known as custard apple"
+    "description": "A great fruit, also known as custard apple",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "sizeXL": "XL"
   }
 ]
